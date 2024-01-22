@@ -51,7 +51,11 @@ class ButtonHub extends StatelessWidget {
           color: Theme.of(context).colorScheme.onPrimary,
           onTap: (value) => onButtonClick(ClearButtonClick(value)),
         ),
-        Button(value: '', color: Theme.of(context).colorScheme.primary),
+        Button(
+          value: '⬅️', 
+          color: Theme.of(context).colorScheme.primary, 
+          onTap: (value) => onButtonClick(DelButtonClick(value)),
+        ),
         Button(
           value: '7',
           onTap: (value) => onButtonClick(CommonButtonClick(value)),
