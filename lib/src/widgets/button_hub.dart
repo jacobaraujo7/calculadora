@@ -22,6 +22,10 @@ class ClearEntryButtonClick extends ButtonClick {
   ClearEntryButtonClick(super.value);
 }
 
+class DelButtonClick extends ButtonClick {
+  DelButtonClick(super.value);
+}
+
 class ButtonHub extends StatelessWidget {
   final void Function(ButtonClick click) onButtonClick;
 
