@@ -19,6 +19,12 @@ class CalcController extends ChangeNotifier {
     } else if (click is EqualsButtonClick) {
       final v = display.interpret();
       display = '$v';
+    } else if(click is DelButtonClick){
+      if (display.isNotEmpty) {
+        display = display.substring(0, display.length - 1);
+      } else {
+        display = '0';
+      }
     }
 
     notifyListeners();
